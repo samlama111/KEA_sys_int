@@ -1,0 +1,8 @@
+name 
+Roman
+age    
+44
+likeProgramming 
+false
+hobbies
+taxes/fraud
