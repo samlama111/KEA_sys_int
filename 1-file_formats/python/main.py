@@ -1,7 +1,9 @@
 import pandas as pd
 import yaml 
+import os
 
-file_path_template = r'file_types\person.'
+directory_path = os.getcwd()
+file_path_template = directory_path+r'\file_types\person.'
 
 # Following formats can be loaded
 # and worked with, either in pandas DataFrame format
