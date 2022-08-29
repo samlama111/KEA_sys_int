@@ -3,7 +3,7 @@ import yaml
 import os
 
 directory_path = os.getcwd()
-file_path_template = directory_path+r'\file_types\person.'
+file_path_template =r'..\file_types\person.'
 
 # Following formats can be loaded
 # and worked with, either in pandas DataFrame format
@@ -36,3 +36,5 @@ with open(file_path_template+'txt') as f:
 # YAML
 with open(file_path_template+'yml', 'r') as file:
     yaml_person = yaml.safe_load(file)
+
+print(json_person)
