@@ -6,7 +6,8 @@ const path_to_file_template = '../file_types/person.'
 const txtFile = await readTxtFile(path_to_file_template+'txt')
 
 // data parsed from txt file to be used as JSON
-// could be done for other formats as well
+// could be done for other formats as well, for instance using Danfo.js
+// https://danfo.jsdata.org/api-reference/input-output
 const parsedTxtFileFromJson = txtToJson(txtFile)
 
 const csv_data = await fs.readFile(path_to_file_template+'csv', {encoding: 'utf8'});
