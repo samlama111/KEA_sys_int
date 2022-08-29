@@ -3,7 +3,7 @@ import fs from 'fs/promises'
 
 const path_to_file_template = '../file_types/person.'
 
-const txtFile = await readTxtFile('txt')
+const txtFile = await readTxtFile(path_to_file_template+'txt')
 const parsedTxtFileFromJson = txtToJson(txtFile)
 
 const csv_data = await fs.readFile(path_to_file_template+'csv', {encoding: 'utf8'});
