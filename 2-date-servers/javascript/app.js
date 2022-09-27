@@ -29,12 +29,12 @@ app.use('/docs',swaggerUI.serve,swaggerUI.setup(swaggerDocs));
  *   
  */  
 app.get("/timestamp", (req, res) => {
-    res.send(new Date())
+    res.send({'Date': new Date()})
 })
 
 /** 
  * @swagger 
- * /Get/Timestamp: 
+ * /Timestamp/Authority: 
  *   get: 
  *     description: Get Timestamp From Authority
  *     responses:  
@@ -42,12 +42,12 @@ app.get("/timestamp", (req, res) => {
  *         description: Success  
  *   
  */ 
-app.get("/get/timestamp", async (req, res) => {
+app.get("/timestamp/authority", async (req, res) => {
     try {
         const response = await fetch("http://127.0.0.1:8000/timestamp")
         const dateObject = await response.json()
         const newDateObject = new Date(dateObject.Date)
-        res.send(newDateObject)
+        res.send({'Date': newDateObject})
     } catch (err) {
         console.log('Connection to date authority failed')
     }
