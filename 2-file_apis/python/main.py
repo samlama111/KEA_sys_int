@@ -3,7 +3,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-file_path_template =r'..\..\1-file_formats\file_types\person.'
+file_path_template =r'..\files\person.'
 
 @app.get("/")
 def read_root():

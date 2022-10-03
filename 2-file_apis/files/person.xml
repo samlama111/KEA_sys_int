@@ -1,0 +1,9 @@
+<person>
+    <name>Roman</name> 
+    <age>44</age>    
+    <likeProgramming>false</likeProgramming> 
+    <hobbies>
+        <hobby>taxes</hobby>
+        <hobby>fraud</hobby>
+    </hobbies>
+</person>

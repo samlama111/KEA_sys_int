@@ -5,7 +5,7 @@ import { txtToJson } from './txt_helper.js'
 
 const app = express()
 
-const path_to_file_template = '../../1-file_formats/file_types/person.'
+const path_to_file_template = '../files/person.'
 
 app.get("/yml", async (req, res) => {
     const yml_data = await fs.readFile(path_to_file_template+'yml', {encoding: 'utf8'});
